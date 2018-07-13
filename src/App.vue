@@ -1,11 +1,12 @@
 <template>
   <div id="app">
     <el-container>
-      <el-header>Header</el-header>
+      <el-header>
+        <header-view></header-view>
+      </el-header>
       <el-container>
         <el-aside width="200px">Aside</el-aside>
         <el-main>
-          <img src="./assets/logo.png">
           main
           <router-view/>
         </el-main>
@@ -15,8 +16,13 @@
 </template>
 
 <script>
+import HeaderView from './components/HeaderView'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    HeaderView
+  }
 }
 </script>
 
