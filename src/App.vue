@@ -8,7 +8,7 @@
         <router-view/>
       </el-main>
       <el-footer>
-        mingyi.gift
+        <footer-view></footer-view>
       </el-footer>
     </el-container>
   </div>
@@ -16,11 +16,13 @@
 
 <script>
 import HeaderView from './components/HeaderView'
+import FooterView from './components/FooterView'
 
 export default {
   name: 'App',
   components: {
-    HeaderView
+    HeaderView,
+    FooterView
   }
 }
 </script>
@@ -35,9 +37,8 @@ export default {
   /* margin-top: 60px; */
 }
 
-#app {
-    min-width: 600px;
-    max-width: 1100px;
-    margin: 0 auto 0 auto;
-  }
+.el-main {
+  background-color: #e6e6e6;
+}
+
 </style>

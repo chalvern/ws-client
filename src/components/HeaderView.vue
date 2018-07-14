@@ -1,8 +1,15 @@
 <template>
   <div class="header">
     <el-row type="flex" justify="center" :gutter="10">
-      <el-col :span="18"><div class="grid-content bg-purple"></div></el-col>
-      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+      <el-col :span="18" style="text-align: left">
+        <div class="grid-content">
+          WhereSmile
+        </div></el-col>
+      <el-col :span="6" style="text-align: right">
+        <div class="grid-content">
+          Login
+        </div>
+        </el-col>
     </el-row>
   </div>
 </template>
@@ -19,20 +26,17 @@ export default {
 }
 </script>
 <style scoped>
+  .header {
+    min-width: 600px;
+    max-width: 1100px;
+    margin: 0 auto 0 auto;
+  }
   .el-row {
     margin-bottom: 20px;
   }
   .el-col {
     border-radius: 4px;
-  }
-  .bg-purple-dark {
-    background: #99a9bf;
-  }
-  .bg-purple {
-    background: #d3dce6;
-  }
-  .bg-purple-light {
-    background: #e5e9f2;
+    margin: 20px 20px 0 20px;
   }
   .grid-content {
     border-radius: 4px;
