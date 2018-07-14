@@ -5,7 +5,6 @@
         v-for="(todo, index) in todos"
         v-bind:todo="todo"
         v-bind:key="index"
-        @click="getDetail(todo)"
       ></location-cell>
     </el-main>
     <el-aside width="200px">
@@ -26,11 +25,46 @@ export default {
   },
   data () {
     return {
-      todos: [
+      todos: []
+    }
+  },
+  watch: {
+    $route () {
+      this.params = this.$route.params.location
+      if (typeof (this.params) !== 'undefined') {
+        this.todos = [
+          { text: '学习 JavaScript' },
+          { text: '学习 Vue' },
+          { text: '学习 JavaScript' },
+          { text: '整个牛项目' }
+        ]
+        console.log('router')
+      } else {
+        this.todos = [
+          { text: '你好美' },
+          { text: '你好可爱' },
+          { text: '你好迷人' },
+          { text: '我很想你' }
+        ]
+      }
+    }
+  },
+  created () {
+    // 如果是location的页面
+    this.params = this.$route.params.location
+    if (typeof (this.params) !== 'undefined') {
+      this.todos = [
         { text: '学习 JavaScript' },
         { text: '学习 Vue' },
         { text: '学习 JavaScript' },
         { text: '整个牛项目' }
+      ]
+    } else {
+      this.todos = [
+        { text: '你好美' },
+        { text: '你好可爱' },
+        { text: '你好迷人' },
+        { text: '我很想你' }
       ]
     }
   }

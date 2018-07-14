@@ -1,7 +1,7 @@
 <template>
   <div class="login-body">
       <div class="description">
-          当前不支持登陆，敬请等待，谢谢。
+          当前不支持登录，敬请等待，谢谢。
       </div>
   </div>
 </template>
