@@ -1,5 +1,7 @@
 <template>
-  <div class="location-cell">
+  <div
+    class="location-cell"
+    @click.self='getDetail(todo)'>
     {{ todo.text }}
   </div>
 </template>
@@ -7,7 +9,12 @@
 <script>
 export default {
   name: 'LocationCell',
-  props: ['todo']
+  props: ['todo'],
+  methods: {
+    getDetail (initial) {
+      this.$router.push('/location/' + initial.text)
+    }
+  }
 }
 </script>
 

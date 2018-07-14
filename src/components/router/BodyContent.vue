@@ -5,6 +5,7 @@
         v-for="(todo, index) in todos"
         v-bind:todo="todo"
         v-bind:key="index"
+        @click="getDetail(todo)"
       ></location-cell>
     </el-main>
     <el-aside width="200px">
