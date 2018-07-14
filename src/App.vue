@@ -34,4 +34,10 @@ export default {
   color: #2c3e50;
   /* margin-top: 60px; */
 }
+
+#app {
+    min-width: 600px;
+    max-width: 1100px;
+    margin: 0 auto 0 auto;
+  }
 </style>

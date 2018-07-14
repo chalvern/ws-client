@@ -1,8 +1,8 @@
 <template>
   <div class="header">
-    <el-row :gutter="20">
-      <el-col :span="16"><div class="grid-content bg-purple"></div></el-col>
-      <el-col :span="8"><div class="grid-content bg-purple"></div></el-col>
+    <el-row type="flex" justify="center" :gutter="10">
+      <el-col :span="18"><div class="grid-content bg-purple"></div></el-col>
+      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
     </el-row>
   </div>
 </template>
@@ -10,7 +10,7 @@
 import 'element-ui/lib/theme-chalk/display.css'
 
 export default {
-  name: '我擦',
+  name: 'HeaderView',
   data () {
     return {
       msg: '希望能看到'
