@@ -18,7 +18,7 @@ import LocationCell from '../LocationCell'
 import DescriptionTip from '../DescriptionTip'
 
 export default {
-  name: 'BodyContent',
+  name: 'TopicsList',
   components: {
     LocationCell,
     DescriptionTip
@@ -28,12 +28,22 @@ export default {
       todos: []
     }
   },
+  watch: {
+    $route () {
+      this.todos = [
+        { text: '学习 JavaScript' },
+        { text: '学习 Vue' },
+        { text: '学习 JavaScript' },
+        { text: '整个牛项目' }
+      ]
+    }
+  },
   created () {
     this.todos = [
-      { text: '复旦大学' },
-      { text: '复旦大学邯郸校区' },
-      { text: '上海' },
-      { text: '华东理工大学徐汇校区' }
+      { text: '学习 JavaScript' },
+      { text: '学习 Vue' },
+      { text: '学习 JavaScript' },
+      { text: '整个牛项目' }
     ]
   }
 }
