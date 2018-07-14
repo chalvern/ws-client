@@ -7,17 +7,21 @@
         v-bind:key="index"
       ></location-cell>
     </el-main>
-    <el-aside width="200px">Aside</el-aside>
+    <el-aside width="200px">
+      <description-tip></description-tip>
+    </el-aside>
   </el-container>
 </template>
 
 <script>
-import LocationCell from './LocationCell'
+import LocationCell from '../LocationCell'
+import DescriptionTip from '../DescriptionTip'
 
 export default {
   name: 'BodyContent',
   components: {
-    LocationCell
+    LocationCell,
+    DescriptionTip
   },
   data () {
     return {
@@ -25,23 +29,6 @@ export default {
         { text: '学习 JavaScript' },
         { text: '学习 Vue' },
         { text: '学习 JavaScript' },
-        { text: '学习 Vue' },
-        { text: '学习 JavaScript' },
-        { text: '学习 Vue' },
-        { text: '学习 JavaScript' },
-        { text: '学习 Vue' },
-        { text: '学习 JavaScript' },
-        { text: '学习 Vue' },
-        { text: '学习 JavaScript' },
-        { text: '学习 Vue' },
-        { text: '学习 JavaScript' },
-        { text: '学习 Vue' },
-        { text: '学习 JavaScript' },
-        { text: '学习 Vue' },
-        { text: '学习 JavaScript' },
-        { text: '学习 Vue' },
-        { text: '学习 JavaScript' },
-        { text: '学习 Vue' },
         { text: '整个牛项目' }
       ]
     }
@@ -58,18 +45,18 @@ export default {
 }
 
 .el-aside {
-  background-color: #D3DCE6;
   color: #333;
   text-align: center;
-  line-height: 200px;
+  margin-left: 20px;
 }
 
 .el-main {
-  background-color: #E9EEF3;
+  background-color: #FBFBFB;
   color: #333;
   text-align: center;
   /* line-height: 160px; */
   min-width: 400px;
+  min-height: 600px;
 }
 
 </style>

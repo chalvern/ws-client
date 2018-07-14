@@ -3,11 +3,15 @@
     <el-row type="flex" justify="center" :gutter="10">
       <el-col :span="18" style="text-align: left">
         <div class="grid-content">
-          WhereSmile
+          <router-link to="/" tag="span">
+            WhereSmile
+          </router-link>
         </div></el-col>
       <el-col :span="6" style="text-align: right">
         <div class="grid-content">
-          Login
+          <router-link to="/login" tag="span">
+            登录
+          </router-link>
         </div>
         </el-col>
     </el-row>
@@ -46,4 +50,5 @@ export default {
     padding: 10px 0;
     background-color: #f9fafc;
   }
+
 </style>

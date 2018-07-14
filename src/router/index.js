@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-import BodyContent from '@/components/BodyContent'
+import BodyContent from '@/components/router/BodyContent'
+import LoginView from '@/components/router/LoginView'
 
 Vue.use(Router)
 
@@ -9,13 +9,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'Main',
+      component: BodyContent
     },
     {
-      path: '/kk',
-      name: 'KK-BodyContents',
-      component: BodyContent
+      path: '/login',
+      name: 'Login',
+      component: LoginView
     }
   ]
 })
