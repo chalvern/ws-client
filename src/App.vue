@@ -42,4 +42,9 @@ export default {
   background-color: #e6e6e6;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 </style>
