@@ -34,8 +34,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  min-width: 600px;
-  /* margin-top: 60px; */
+  width: 100%;
+  margin: 0;
 }
 
 .el-main {
@@ -45,6 +45,12 @@ export default {
 html, body {
   height: 100%;
   margin: 0;
+}
+
+@media (max-width: 870px) {
+  .el-main {
+    padding: 10px 1px 0;
+  }
 }
 
 </style>

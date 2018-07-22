@@ -17,7 +17,7 @@ export default {
 </script>
 <style scoped>
   .footer {
-    min-width: 600px;
+    width: 80%;
     max-width: 1100px;
     margin: 0 auto 0 auto;
     text-align: left;
