@@ -52,7 +52,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .body-content {
-  min-width: 600px;
+  width: 80%;
   max-width: 1100px;
   margin: 0 auto 0 auto;
 }
